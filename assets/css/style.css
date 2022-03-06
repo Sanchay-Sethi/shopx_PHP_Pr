@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+:root {
+    --pr1: #03045E;
+    --pr2: #00B4D8;
+    --pr3: #90E0EF;
+    --pr4: #CAF0F8;
+    --se1: #4C3F91;
+    --se2: #9145B6;
+    --se3: #B958A5;
+    --se4: #FF5677;
+    --se5: #e32769;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+h1{
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+h2{
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+h3{
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+
+h4{
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+h5{
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+h6{
+    color:#D8D8D8;
+}
+
+button{
+
+    font-size: 0.8rem;
+    font-weight: 900;
+    outline: none;
+    border: none;
+    background-color: #1d1d1d;
+    color:aliceblue;
+    padding: 13px 30px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: 0.5s ease;
+
+}
+
+button:hover{
+    background-color: var(--se4);
+}
+
+.nav-buttons{
+    margin-left : 40%;
+}
+
+.navbar{
+    font-size: 16px;
+    padding-top: 1rem !important;
+    padding-bottom: 1rem !important;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-light .navbar-nav .nav-link{
+    padding: 0 20px;
+    color: #000;
+    transition: 0.4s ease;
+}
+
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar i:hover,
+.navbar-light .navbar-nav .nav-link.active
+.navbar i:hover{
+    color:var(--se4);
+
+}
+
+.navbar i {
+    font-size: 1.2rem;
+    padding: 0 2px;
+    transition: 0.4s ease;
+    font-weight: 300;
+    cursor: pointer;
+    margin-left: 25px;
+    
+}
+.navbar-toggler{
+    outline: none !important;
+    background-color: rgb(250, 250, 250) !important;
+}
+.navMenuIcon{
+    width: 30px;
+}
+
+
+.logoimg{
+    width: 150px;
+    margin-left:50px;
+    cursor: pointer;
+}
+
+@media only screen and (max-width:990px) {
+
+    .nav-buttons{
+        margin: 5px;
+    }
+
+    .nav-buttons ul{
+        margin: 2rem;
+        justify-content: flex-start;
+        align-items: flex-start;
+        text-align: left;   
+    }
+
+    .nav-buttons ul .fas{
+        margin: 20px 5px 10px 20px;
+    } 
+}
+
+#home{
+    background-image:linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.5)), url('../img/homebg.jpg');
+    width: 100%;
+    height: 100vh;
+    background-size:cover;
+    background-position-y: 40px;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items:center;
+}
+
+#home span{
+    color:#fff;
+    font-weight:900;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+@media only screen and (max-width:990px) {
+    #home{
+        background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.9)), url('../img/clothesbg.jpg');
+        background-size: cover;
+        background-position-y: 80px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        color : white
+    }
+
+    #home span{
+        color :rgb(255, 255, 255)
+    }
+}
+
+.brandImg{
+    width: 200px;
+    margin: 50px;
+}
+
+@media only screen and (max-width:990px) {
+    .brandImg{
+        width: 150px;
+        margin: 30px;
+    }
+}
+
+
+#new .one img{
+    width: 100%;
+    height: 100%;
+   
+    object-fit: cover;
+}
+
+#new .one{
+    position: relative;
+}
+
+#new .one .details{
+    position: absolute;
+    top:0;
+    left:0;
+    color: var(--pr2);
+    font-weight: bold;
+    transition: 0.4s ease;
+    opacity: 0.7;
+    background-color: rgb(1,1,0.5);
+    width: 100%;
+    height: 100%;
+}
+
+#new .one .details:hover{
+    background-color:rgb(56, 56, 56);
+}
+
+#new .one:nth-child(1) .details{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+}
+
+#new .one:nth-child(2) .details{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+}
+
+#new .one:nth-child(3) .details{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
