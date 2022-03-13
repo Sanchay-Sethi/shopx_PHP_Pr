@@ -432,6 +432,9 @@ footer-one a{
     background-color: #dadada;
     
 }
+.cart tr{
+    border-bottom: 1px solid rgb(202, 202, 202);
+}
 
 .cart td{
     padding: 10px 20px;
@@ -469,7 +472,6 @@ footer-one a{
     font-size: 15px;
     background-color: #fff;
     border: none;
-    
 }
 
 .cart .product-info p{
@@ -484,7 +486,10 @@ footer-one a{
 .cart-total table{
     width: 100%;
     max-width: 500px;
-    border-top: 3px solid var(--pr2);
+    
+}
+.cart-total img{
+    width: 300px;
 }
 
 td:last-child{
@@ -501,7 +506,213 @@ th:last-child{
 }
 
 .checkout-btn{
+    border-radius: 10px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
     background-color: var(--pr2);
     color: #fff;
 }
 
+
+
+#login-form{
+    width: 50%;
+    margin: 5px auto;
+    text-align: center;
+    padding: 20px;
+    
+  }
+  
+  #login-form input{
+      width: 50%;
+      margin: 5px auto;
+  }
+  
+  #login-form #login-btn{
+      background-color: var(--se4);
+      color:#fff
+  }
+  
+  #login-form #register-url{
+      color:var(--pr2);
+  }
+
+  @media only screen and (max-width: 990px){
+      #login-form{
+        width: 100%;
+      }
+      
+      #login-form input{
+          width: 100%;
+      }
+  }
+
+#register-form{
+    width: 70%;
+    margin: 5px auto;
+    text-align: center;
+    padding: 20px;
+  
+  }
+  
+  #register-form input{
+      width: 70%;
+      margin: 5px auto;
+  }
+  
+  #register-form #register-btn{
+      background-color: var(--pr2);
+      color:#fff
+  
+  }
+  
+  #register-form #login-url{
+      color:var(--se4);
+  }
+
+  @media only screen and (max-width: 990px){
+    #register-form{
+      width: 100%;
+    }
+    
+    #register-form input{
+        width: 100%;
+    }
+}
+
+#account-form{
+    width: 90%;
+    margin: 35px auto;
+    padding: 20px;
+}
+
+#account-form input{
+    margin:5px auto;
+}
+
+
+#account-form #change-pass-btn{
+    color: #fff;
+    background-color: var(--pr3);
+}
+
+.account-info{
+    text-align: justify;
+}
+.account-info #order-btn{
+    text-decoration: none;
+    color:var(--pr2);
+}
+.account-info p span{
+    color: rgb(143, 143, 143);
+}
+
+.account-info #logout-btn{
+    color:var(--se4);
+    text-decoration: none;
+  
+}
+
+@media only screen and (max-width: 990px){
+    #account-form{
+      width: 100%;
+    }
+    
+    .account-info{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .account-info hr{
+        
+    }
+}
+
+
+.orders table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.orders .product-info{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.orders th{
+    padding: 5px 20px;
+    color: rgb(46, 46, 46);
+    background-color: #dadada;
+}
+
+/* .orders th:nth-child(2){
+    text-align: right;
+} */
+
+.orders td{
+    padding: 10px 20px;
+}
+
+.orders td img{
+    width: 80px;
+    height: 80px;
+    margin-right: 10px;
+}
+
+.orders .order-details-btn{
+    color:#fff;
+    background-color: #fb774b;;
+}
+
+
+#checkout-form .checkout-small-element{
+    display: inline-block;
+    width: 48%;
+    margin: 10px auto;
+}
+
+#checkout-form .checkout-large-element{
+    width: 96.5%;
+}
+
+#checkout-form .checkout-btn-container{
+    margin: 10px;
+    text-align: right;
+    margin-right: 40px;
+}
+
+#checkout-form #checkout-btn{
+    color: #fff;
+    background-color: var(--pr2);
+}
+
+
+#contact span{
+    color: var(--pr2);
+}
+
+
+#shop{
+    width:70%;
+    display: inline-block;
+}
+
+
+#search{
+    width:20%;
+    display: inline-block;
+    float: left;
+
+}
+
+
+.cart-quantity{
+    background-color: #fb774b;
+    color: #fff;
+    padding: 1px 5px;
+    border-radius: 50%;
+    margin: -5px;
+    font-size: 1rem;
+}
+  
