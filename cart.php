@@ -1,5 +1,9 @@
+<?php include('components/header.php'); ?>
 <?php
-  session_start();
+  if(!isset($_SESSION['logged_in'])){
+    header('location: login.php');
+    exit;
+  }
   if(isset($_POST['add_to_cart'])){
     if(isset($_SESSION['cart'])){
        $products_array_ids = array_column($_SESSION['cart'],"product_id");
@@ -70,7 +74,6 @@
   }
 ?>
 
-<?php include('components/navbar.php'); ?>
 <head>
     <title>Cart</title>
 </head>

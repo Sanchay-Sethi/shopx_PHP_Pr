@@ -1,3 +1,4 @@
+<?php include('components/header.php'); ?>
 <?php
   include('connection/server.php');
   if(isset($_GET['product_id'])){
@@ -13,7 +14,6 @@
   }
 ?>
 
-<?php include('components/navbar.php'); ?>
 <head>
     <title>Product</title>
 </head>
@@ -61,5 +61,16 @@
 
         </div>
       </section>
+
+      <script>
+        var mainImg = document.getElementById("mainImg");
+        var smallImg = document.getElementsByClassName("small-img"); 
+        for(let i=0; i<4; i++){
+            smallImg[i].onclick = function(){
+                mainImg.src = smallImg[i].src;
+            }
+        }
+       </script>
+
 
       <?php include('components/footer.php'); ?>

@@ -1,5 +1,9 @@
-<?php include('components/navbar.php'); ?>
+<?php include('components/header.php'); ?>
 <?php
+ if(isset($_SESSION['logged_in'])){
+    header('location: index.php');
+    exit;
+ }   
  include('connection/server.php');
  if(isset($_POST['login_btn'])){
     $email = $_POST['email'];
@@ -35,7 +39,7 @@
         " id = "" class = "mt-5 py-5">
         
         <div class="max-auto container">
-            <form class = "my-5" style = "background-color : white; border-radius:15px; box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;" method="POST"  action="login.php" id="login-form">
+            <form method="POST" action="login.php" class = "my-5" style = "background-color : white; border-radius:15px; box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;" method="POST"  action="login.php" id="login-form">
                 <?php if(isset($_GET['error'])){?><p style = "color:red;"><?php echo $_GET["error"]?> </p><?php } ?>
                 <div class="container text-center my-4 ">
                     <h2 style = "color:black" class="font-weight-bold">Login</h2>

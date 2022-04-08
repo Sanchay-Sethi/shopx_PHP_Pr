@@ -1,4 +1,4 @@
-<?php include('components/navbar.php'); ?>
+<?php include('components/header.php'); ?>
 <head>
     <title>Contact Us</title>
 </head>

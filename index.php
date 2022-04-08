@@ -1,15 +1,15 @@
-<?php include('components/navbar.php'); ?>
+<?php include('components/header.php'); ?>
 
 <head>
     <title>Home</title>
-    <style>
+    <!-- <style>
       .adjustImg{
             width: 100%;
             height: auto;
             box-sizing: border-box;
             object-fit: cover;
         }
-    </style>
+    </style> -->
 </head>
     <section id = "home">
         <div class="container">
@@ -18,7 +18,7 @@
             <h5>GRAB LATEST OFFERS</h5>
             <h1><span>Flat 50% OFF</span> This Summer !</h1>
             <p>Shop now with shopx to grab the latest and best deals.</p>
-            <button>EXPLORE</button>
+            <a href="shop.php"><button>EXPLORE</button></a>
         </div>
 
     </section>
@@ -38,21 +38,21 @@
                 <img class = "img-fluid" src="assets/img/one.jpg" alt="">
                 <div class = "details">
                     <h2>25% OFF On Shoes</h2>
-                    <button class = "text-uppercase">SHOP NOW</button>
+                    <a href="shop.php?filter=shoes"><button class = "text-uppercase">SHOP NOW</button></a>
                 </div>
             </div>
             <div class = "one col-lg-4 col-md-12 col-sm-12 p-0">
                 <img class = "img-fluid" src="assets/img/two.jpg" alt="">
                 <div class = "details">
                     <h2>Mens Wear and Glasses</h2>
-                    <button class = "text-uppercase">SHOP NOW</button>
+                    <a href="shop.php?filter=mens"><button class = "text-uppercase">SHOP NOW</button></a>
                 </div>
             </div>
             <div class = "one col-lg-4 col-md-12 col-sm-12 p-0">
                 <img class = "img-fluid" src="assets/img/three.jpg" alt="">
                 <div class = "details">
                     <h2>50% OFF on Womens Wear</h2>
-                    <button class = "text-uppercase">SHOP NOW</button>
+                    <a href="shop.php?filter=women"><button class = "text-uppercase">SHOP NOW</button></a>
                 </div>
             </div>
         </div>

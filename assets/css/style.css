@@ -662,7 +662,7 @@ th:last-child{
 
 .orders .order-details-btn{
     color:#fff;
-    background-color: #fb774b;;
+    background-color: #000 !important;
 }
 
 
@@ -708,7 +708,7 @@ th:last-child{
 
 
 .cart-quantity{
-    background-color: #fb774b;
+    background-color: #ec1a60;
     color: #fff;
     padding: 1px 5px;
     border-radius: 50%;

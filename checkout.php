@@ -1,7 +1,10 @@
-<?php include('components/navbar.php'); ?>
+<?php include('components/header.php'); ?>
 <?php
-  session_start();
-  if( !empty($_SESSION['cart']) && isset($_POST['checkout'])){
+  if(!isset($_SESSION['logged_in'])){
+    header('location: index.php');
+     exit;
+  }
+  if( !empty($_SESSION['cart'])){
 
   }else{
     header('location: index.php');
@@ -21,11 +24,11 @@
             <form method="POST" action="connection/place_user_order.php" id="checkout-form">
                 <div class="form-group checkout-small-element" >
                     <label for="register-name">Username</label>
-                    <input type="text" class = "form-control" id = "checkout-name" name = "name" placeholder = "Your Name" required>
+                    <input value = "<?php echo $_SESSION['user_name'] ?>" type="text" class = "form-control" id = "checkout-name" name = "name" placeholder = "Your Name" required>
                 </div>
                 <div class="form-group checkout-small-element" >
                     <label for="checkout-email">Email</label>
-                    <input type="email" class = "form-control" id = "checkout-email" name = "email" placeholder = "Your Email" required>
+                    <input value = "<?php echo $_SESSION['user_email'] ?>" type="email" class = "form-control" id = "checkout-email" name = "email" placeholder = "Your Email" required>
                 </div>
                 <div class="form-group checkout-small-element" >
                     <label for="checkout-email">Phone</label>

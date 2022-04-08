@@ -1,6 +1,5 @@
-<?php include('components/navbar.php'); ?>
+<?php include('components/header.php'); ?>
 <?php
-    session_start();
     include('connection/server.php');
     if(isset($_SESSION['logged_in'])){
         header('location: account.php');
